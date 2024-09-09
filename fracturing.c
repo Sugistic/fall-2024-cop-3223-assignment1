@@ -20,7 +20,7 @@ int main(){
     int opinion3 = calculateWidth();
     int opinion4 = calculateHeight();
     //displaying return values as asked
-    printf("\nthe distance is %d, opinion on calculatePerimeter%d, opinion on calculateArea%d, opinion on calculateWidth%d, opinion on calculateHeight%d",distance,opinion1,opinion2,opinion3,opinion4);
+    printf("\nthe distance is %d, opinion on calculatePerimeter is a %d, opinion on calculateArea is a %d, opinion on calculateWidth is a %d, opinion on calculateHeight is a %d",distance,opinion1,opinion2,opinion3,opinion4);
     return 0;
 }
 
