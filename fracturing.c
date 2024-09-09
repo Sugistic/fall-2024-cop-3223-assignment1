@@ -95,7 +95,7 @@ double calculatePerimeter(){
     //calling the width and height functions in order to calculate perimeter
     double perimeter;
     double radius = calculateDistance();
-    perimeter = (2*pi*radius);
+    perimeter = (2*PI*radius);
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
     printf("\nThe perimeter between the two points is %lf",perimeter);
@@ -114,7 +114,7 @@ double calculatePerimeter(){
     scanf("\n%lf",&y1);
     scanf("\n%lf",&y2);
 
-    calculateDistance();
+    double distance = calculateDistance();
     double area;
     double radius_squared;
     radius_squared = distance*distance;
