@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 
-//setting my variables to use later
+//setting PI to use later
 #define PI 3.14159
-
+//Defining the functions
 double calculateDistance();
 double calculatePerimeter();
 double calculateArea();
@@ -12,15 +12,19 @@ double calculateHeight();
 
 
 int main(){
+    //setting the return values to a variable
     int distance = calculateDistance();
     int opinion1 = calculatePerimeter();
     int opinion2 = calculateArea();
     int opinion3 = calculateWidth();
     int opinion4 = calculateHeight();
-    printf("%d,%d,%d,%d,%d",distance,opinion1,opinion2,opinion3,opinion4);
+    //displaying return values as asked
+    printf("\nthe distance is %d, opinion on calculatePerimeter%d, opinion on calculateArea%d, opinion on calculateWidth%d, opinion on calculateHeight%d",distance,opinion1,opinion2,opinion3,opinion4);
     return 0;
 }
+
 double calculateDistance(){
+    //setting variables
     double x1;
     double x2;
     double y1;
@@ -41,6 +45,7 @@ double calculateDistance(){
 }
 
 double calculateWidth(){
+    //setting variables
     double x1;
     double x2;
     double y1;
@@ -51,11 +56,12 @@ double calculateWidth(){
     scanf("\n%lf",&y1);
     scanf("\n%lf",&y2);
 
+    //width is the same as diameter which is the distance
     double width;
     width = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
-    printf("The width of the city encompassed by your request is %lf",width);
+    printf("\nThe width of the city encompassed by your request is %lf\n",width);
     double opinion = 5;
     return opinion;
 }
@@ -65,7 +71,7 @@ double calculateHeight(){
     double x2;
     double y1;
     double y2;
-    //getting user input for variable coordinate points
+    //height is the same as diameter which is the distance
     scanf("%lf",&x1);
     scanf("\n%lf",&x2);
     scanf("\n%lf",&y1);
@@ -76,7 +82,7 @@ double calculateHeight(){
     width = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
-    printf("The height of the city encompassed by your request is %lf",height);
+    printf("\nThe height of the city encompassed by your request is %lf\n",height);
     double opinion = 5;
     return opinion;
 }
@@ -92,13 +98,13 @@ double calculatePerimeter(){
     scanf("\n%lf",&y1);
     scanf("\n%lf",&y2);
 
-    //calling the width and height functions in order to calculate perimeter
+    //Using cicumference formula while getting the radius from the distance function
     double perimeter;
     double radius = calculateDistance();
     perimeter = (2*PI*radius);
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
-    printf("\nThe perimeter between the two points is %lf",perimeter);
+    printf("\nThe perimeter between the two points is %lf\n",perimeter);
     double opinion = 5;
     return opinion;
 }
@@ -113,7 +119,7 @@ double calculatePerimeter(){
     scanf("\n%lf",&x2);
     scanf("\n%lf",&y1);
     scanf("\n%lf",&y2);
-
+    //using the area of a circle formula while getting the radius
     double distance = calculateDistance();
     double area;
     double radius_squared;
@@ -121,7 +127,7 @@ double calculatePerimeter(){
     area = (PI*radius_squared);
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
-    printf("\nThe area between the two points is %lf",area);
+    printf("\nThe area between the two points is %lf\n",area);
     double opinion = 5;
     return opinion;
  }
