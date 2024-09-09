@@ -104,7 +104,7 @@ double calculatePerimeter(){
     perimeter = (2*PI*radius);
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
-    printf("\nThe perimeter of the city encompassed by your request is%lf\n",perimeter);
+    printf("\nThe perimeter of the city encompassed by your request is %lf\n",perimeter);
     double opinion = 5;
     return opinion;
 }
