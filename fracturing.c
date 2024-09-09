@@ -1,5 +1,6 @@
+//including square root from math.h
 #include <stdio.h>
-
+#include <math.h>
 
 //setting PI to use later
 #define PI 3.14159
@@ -57,8 +58,7 @@ double calculateWidth(){
     scanf("\n%lf",&y2);
 
     //width is the same as diameter which is the distance
-    double width;
-    width = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
+    double width = sqrt((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
     printf("\nThe width of the city encompassed by your request is %lf\n",width);
@@ -104,7 +104,7 @@ double calculatePerimeter(){
     perimeter = (2*PI*radius);
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
-    printf("\nThe perimeter between the two points is %lf\n",perimeter);
+    printf("\nThe perimeter of the city encompassed by your request is%lf\n",perimeter);
     double opinion = 5;
     return opinion;
 }
