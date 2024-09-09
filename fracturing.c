@@ -121,10 +121,8 @@ double calculatePerimeter(){
     scanf("\n%lf",&y2);
     //using the area of a circle formula while getting the radius
     double distance = calculateDistance();
-    double area;
-    double radius_squared;
-    radius_squared = distance*distance;
-    area = (PI*radius_squared);
+    double radius_squared = distance*distance;
+    double area = (PI*radius_squared);
     printf("\nPoint #1 entered: x1 = %lf; y1 = %lf",x1,y1);
     printf("\nPoint #2 entered: x2 = %lf; y2 = %lf",x2,y2);
     printf("\nThe area between the two points is %lf\n",area);
